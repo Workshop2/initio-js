@@ -1,0 +1,18 @@
+{
+  "author": "Simon Colmer (http://x-volt.com)",
+  "name": "initio-js",
+  "description": "An application to control the initio robot",
+  "version": "0.0.0",
+  "homepage": "https://github.com/workshop2/initio-js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Workshop2/initio-js.git"
+  },
+  "main": "initio.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
