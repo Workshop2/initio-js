@@ -16,8 +16,20 @@ console.log("Hello :)")
 board.on("ready", function() {
   console.log("ready")
 
-  var frontLeftMotor = new five.Motor(L1);
-  frontLeftMotor.forward(1.0);
+  var frontLeftMotor = new five.Motor({
+    pins: {
+      pwm: 19,
+      dir: 20
+    }
+  });
+
+  console.log(frontLeftMotor);
+
+  /*
+  console.log("Starting...");
+  frontLeftMotor.start(0);
+  console.log("Started...?");
+  */
 
 
 
