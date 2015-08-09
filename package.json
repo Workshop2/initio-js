@@ -9,7 +9,10 @@
     "url": "git://github.com/Workshop2/initio-js.git"
   },
   "main": "initio.js",
-  "dependencies": {},
+  "dependencies": {
+    "johnny-five": "^0.8.86",
+    "raspi-io": "^3.3.4"
+  },
   "devDependencies": {},
   "optionalDependencies": {},
   "engines": {
