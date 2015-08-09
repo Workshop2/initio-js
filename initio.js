@@ -19,7 +19,7 @@ board.on("ready", function() {
   var leftMotor = new five.Motor({
     pins: {
       pwm: L1,
-      dir: 12	//If this is set to 12, the motor turns on but won't
+      dir: L2	//If this is set to 12, the motor turns on but won't
 				// turn off until reboot...??
     }
   });
