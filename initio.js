@@ -40,7 +40,9 @@ board.on("ready", function() {
 
 
 
-//  console.log(leftMotor);
-//  var led = new five.Led("P1-13");
-//  led.blink();
+  //var led = new five.Led("GPIO24");
+  
+  //console.log(led);
+  //led.blink(25);
+  
 });
