@@ -18,7 +18,7 @@ board.on("ready", function() {
 
   var frontLeftMotor = new five.Motor({
     pins: {
-      pwm: 19,
+      pwm: L1,
       dir: 20
     }
   });
