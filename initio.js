@@ -16,24 +16,31 @@ console.log("Hello :)")
 board.on("ready", function() {
   console.log("ready")
 
-  var frontLeftMotor = new five.Motor({
+  var leftMotor = new five.Motor({
     pins: {
       pwm: L1,
-      dir: 20
+      dir: 12	//If this is set to 12, the motor turns on but won't
+				// turn off until reboot...??
     }
   });
 
-  console.log(frontLeftMotor);
+  console.log(leftMotor);
 
-  /*
+  
   console.log("Starting...");
-  frontLeftMotor.start(0);
-  console.log("Started...?");
-  */
+  leftMotor.start(0);
+  
+    console.log("forward...");
+  leftMotor.forward(255);
+  
+  board.wait(5000, function() {
+   leftMotor.stop();
+   console.log("Stopped");
+  });
 
 
 
-//  console.log(frontLeftMotor);
+//  console.log(leftMotor);
 //  var led = new five.Led("P1-13");
 //  led.blink();
 });
