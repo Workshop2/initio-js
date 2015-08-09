@@ -17,6 +17,7 @@ board.on("ready", function() {
   console.log("ready")
 
   var frontLeftMotor = new five.Motor(L1);
+  frontLeftMotor.start(50);
   console.log(frontLeftMotor);
 //  var led = new five.Led("P1-13");
 //  led.blink();
